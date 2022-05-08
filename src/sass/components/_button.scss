@@ -1,0 +1,36 @@
+.button {
+   width: 50px;
+   height: 50px;
+   font-size: 18px;
+   background-color: $color-button;
+   color: $color-primary;
+   cursor: crosshair;
+   transition: background-color 0.1s ease-out;
+   border-top: 3px solid gray;
+   border-left: 3px solid gray;
+   &:hover,
+   &--active {
+      transform: scale(95%);
+      background-color: $color-button--active;
+      border: none;
+      border-bottom: 2px solid gray;
+      border-right: 2px solid gray;
+   }
+   &:focus {
+      outline: none;
+      border-top: 2px solid black;
+      border-left: 2px solid black;
+      border-bottom: 3px solid gray;
+      border-right: 3px solid gray;
+   }
+}
+
+.backspace,
+.capslock,
+.enter,
+.shift {
+   width: 105px;
+}
+.space {
+   width: 380px;
+}
