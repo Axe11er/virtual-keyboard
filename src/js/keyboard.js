@@ -75,7 +75,7 @@ const addClickListener = (kb) => {
       }
       if (evt.target.closest('.enter') === button) addText('\n');
       if (evt.target.closest('.space') === button) addText(' ');
-      if (evt.target.closest('.tab') === button) addText('    ');
+      if (evt.target.closest('.tab') === button) addText('\t');
       if (evt.target.closest('.common') === button) {
         addText(button.innerText);
       }
@@ -143,7 +143,7 @@ const keydownHandler = (evt) => {
   }
   if (evt.code === 'Tab') {
     evt.preventDefault();
-    textarea.value += '    ';
+    addText('\t');
   }
   if (evt.ctrlKey && evt.altKey) {
     textarea.classList.toggle('textarea--ru');
