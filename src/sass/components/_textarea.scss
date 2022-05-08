@@ -1,0 +1,14 @@
+.textarea {
+   max-width: 90vw;
+   min-width: 834px;
+   min-height: 50px;
+   margin: 0 auto;
+   padding: 5px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 20px;
+   letter-spacing: 0.1rem;
+   outline: none;
+   border: 2px solid $color-primary;
+   background-color: $color-background;
+   color: $color-secondary;
+}

@@ -1,0 +1,10 @@
+.keyboard {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   padding: 5px;
+   border: 2px solid $color-primary;
+   margin: 0 auto;
+   background-color: $color-background;
+   font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
